@@ -1,5 +1,5 @@
 #! /bin/bash
-
+#Delete all the empty lines from the file and save it back.
 function empty_lines_script() {
 #Doing check that file is exist.	
 if [ -e "$1" ]
