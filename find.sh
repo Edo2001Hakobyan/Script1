@@ -2,6 +2,7 @@
 #Doing check that $1 is exist or not.	
 if [ -e $1 ]
  then
+#Function that do find without using find command.
    function search_files() {
       for item in $(ls "$1"); do
 #Doing check that $1 is directory.	  
