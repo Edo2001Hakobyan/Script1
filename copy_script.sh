@@ -11,6 +11,10 @@ if [ -e "$1" ]
      if [ -f "$1" ]
       then	
         cat "$1" >> "$2"
+#Doing check that $1 is directory.	
+    elif [ -d "$1" ]
+      then 
+	  rsync -a "$1/"  "$2/"	
     fi	
 
 else
