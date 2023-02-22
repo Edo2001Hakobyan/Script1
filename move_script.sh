@@ -7,7 +7,7 @@ then
 #Doing check that $1 is file.	
 	if [ -f "$1" ]
 	then
-		cp "$1" "$2"
+		cp -ln "$1" "$2"
 		rm "$1"
 #Doing check that $1 is directory.		
 	elif [ -d "$1" ]
