@@ -77,11 +77,20 @@ std::string get_general_letters(std::string a,std::string b)
  for(int i=0; a.length()>i;i++) {
 	 for(int j=0;j<b.length();j++) {
 		  if ( a[i] == b[j]) {
-			  generalLetter += a[i];
-			    }
-		  
-		   }
- }
+			  int a = 0;
+			  for (int l=0;l<generalLetter.length();l++) {
+				 if( generalLetter[l]==b[j]) {
+				  a += 1;
+			          break;
+			         }
+			  }
+			  if(a == 0) {
+			     generalLetter += b[j];
+		          }
+			  
+		     }
+		  }
+              }
 		  return generalLetter; 
 
 }
